@@ -54,7 +54,7 @@ body {
     background-image: url(img/capa-mobile.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-attachment: fixed;
     filter: brightness(30%);
 
@@ -140,17 +140,11 @@ body {
 
 @media (min-width: 1000px) {
 
-    .capa::before {
-        background-image: url(img/capa-pc.svg);
-
-    }
-
     .capa__titulo, .capa__texto {
         width: 30%;
 
     }
 
-    
 }
 
 
