@@ -1,6 +1,8 @@
 :root {
     --fonte-principal: 'Montserrat';
     --escuro: #181818;
+    --cinza-medio: #474747;
+    --cinza-claro: #EBE9EA;
 
 }
 
@@ -11,13 +13,13 @@ body {
 
 }
 
-.desconto {
+.desconto, .rodape {
     height: 60px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: var(--escuro);
     font-weight: 500;
 
 }
@@ -30,16 +32,13 @@ body {
     justify-content: center;
     font-size: 24px;
     font-weight: 600;
-    color: #181818;
+    color: var(--escuro);
 
 }
 
 .capa {
-    width: 100%;
-    height: 377px;
-    background-image: url(img/Air-Jordan-1-Retro-High-OG-Wmns-TWIST-Feminino\ 1\ \(1\).svg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: relative;
+    height: 340px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,13 +47,27 @@ body {
 
 }
 
+.capa::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(img/Air-Jordan-1-Retro-High-OG-Wmns-TWIST-Feminino\ 1\ \(1\).svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(30%);
+
+}
+
 .capa__titulo {
+    position: relative;
     font-size: 28px;
     font-weight: 700;
 
 }
 
 .capa__texto {
+    position: relative;
     font-size: 16px;
     font-weight: 600;
     line-height: 1.7em;
@@ -62,7 +75,49 @@ body {
 
 }
 
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em;
+    color: var(--escuro);
+    padding-top: 4em;
 
+}
+
+.principal__titulo {
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 1em;
+
+}
+
+.principal__texto {
+    font-weight: 500;
+    text-align: center;
+    line-height: 2em;
+    margin-bottom: 2em;
+    color: var(--cinza-medio);
+
+}
+
+.container {
+    width: 374px;
+    height: 302px;
+    background-color: var(--cinza-claro);
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container__imagem {
+    width: 250px;
+    height: 150px;
+
+}
 
 
 
