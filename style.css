@@ -127,7 +127,7 @@ body {
 
 }
 
-.container:hover {
+.container:hover > .container__imagem {
     transform: scale(1.1);
     transition: 1s;
 
